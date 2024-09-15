@@ -1,0 +1,14 @@
+.cuerpoInicio{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 70px;
+    article{
+        display: flex;
+        align-items: center;
+        p{
+            color: beige;
+            text-align: center;
+        }
+    }
+}

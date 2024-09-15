@@ -1,0 +1,90 @@
+.cuerpoInicio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 70px;
+}
+.cuerpoInicio article {
+  display: flex;
+  align-items: center;
+}
+.cuerpoInicio article p {
+  color: beige;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(0, 0, 0);
+}
+body header {
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
+  justify-content: space-between;
+}
+body header img {
+  margin-left: 50px;
+}
+body header nav {
+  margin: 0px 50px 0px 50px;
+}
+body header nav ul {
+  display: flex;
+  padding: 10px;
+  border: beige 3px solid;
+  padding: 10px;
+  list-style: none;
+}
+body header nav ul li a {
+  padding: 10px;
+  color: beige;
+  text-decoration: none;
+}
+
+section h1 {
+  color: beige;
+  text-align: center;
+}
+
+.CUERPO {
+  border: 5px solid beige;
+  color: beige;
+  margin: 20px 0px 20px 0px;
+  text-align: center;
+  font-size: 100px;
+  padding: 300px 0px 300px 0px;
+}
+
+footer section {
+  color: beige;
+  border: 5px beige solid;
+  text-align: center;
+  padding: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer section div {
+  display: flex;
+  margin: 10px;
+  margin: 0px 30px 0px 30px;
+}
+footer section div h2 {
+  padding: 10px;
+}
+footer section div a {
+  padding: 2px;
+}
+footer section div a img {
+  border: 1px beige solid;
+}/*# sourceMappingURL=sass.css.map */
