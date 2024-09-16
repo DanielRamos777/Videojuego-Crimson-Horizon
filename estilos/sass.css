@@ -50,12 +50,13 @@ body header {
   margin: 10px;
   padding: 10px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 body header img {
   margin-left: 50px;
 }
 body header nav {
-  margin: 0px 50px 0px 50px;
+  margin: 0px 50px 0px 0px;
 }
 body header nav ul {
   display: flex;
@@ -70,12 +71,18 @@ body header nav ul li a {
   text-decoration: none;
 }
 
+@media (max-width: 320px) {
+  header {
+    margin: 0px;
+  }
+}
 section h1 {
   color: beige;
   text-align: center;
 }
 
 .CUERPO {
+  display: flex;
   border: 5px solid beige;
   color: beige;
   margin: 20px 0px 20px 0px;
