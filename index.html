@@ -7,58 +7,83 @@
     <link rel="stylesheet" href="./estilos/sass.css">
 </head>
 
-<!-- BARRA DE NAVEGACION -->
-
 <body>
+
+    <div id="preloader">
+        <img src="./image/giphy.gif" alt="Cargando" id="loader-gif">
+    </div>
+    
+    
+
     <header>
-        <img src="./image/logos/Crimson-Horizon-logo.png" alt="" width="200px">
+        <img src="./image/logos/Crimson-Horizon-logo.png" alt="Logo" width="200px">
         <nav>
-            <ul>
+            <div class="menu-icon" id="menu-icon">&#9776;</div>
+            <ul id="nav-links">
                 <li><a href="./index.html">INICIO</a></li>
                 <li><a href="./data/mapas.html">MAPAS</a></li>
                 <li><a href="./data/rangos.html">RANGOS</a></li>
                 <li><a href="./data/personajes.html">PERSONAJES</a></li>
-                <li><a href="./data/jugabilidad.html">¿COMO SE JUEGA?</a></li>
+                <li><a href="./data/jugabilidad.html">JUGABILIDAD</a></li>
             </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>
-            
-        </h1>
+    <section class="cuerpoInicio">
+        <article>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem provident iusto commodi asperiores dolorem neque harum ea enim rem quas eius, ab, ullam, delectus obcaecati. Natus impedit rerum quae.</p>
+        </article>
+        <article>
+            <img src="./image/12.jpg" alt="" width="50%">
+        </article>
     </section>
 
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    Crimson Horizon es una comunidad dedicada a jugadores y fanáticos de los videojuegos. Únete a nosotros y descubre nuevos mundos, estrategias y mucho más.
+                </p>
+            </div>
 
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./data/mapas.html">Mapas</a></li>
+                    <li><a href="./data/rangos.html">Rangos</a></li>
+                    <li><a href="./data/personajes.html">Personajes</a></li>
+                    <li><a href="./data/jugabilidad.html">JUGABILIDAD</a></li>
+                </ul>
+            </div>
 
+            <div class="footer-section contact">
+                <h2>Contacto</h2>
+                <ul>
+                    <li>Email: <a href="mailto:info@crimsonhorizon.com">info@crimsonhorizon.com</a></li>
+                    <li>Teléfono: +51 123 456 789</li>
+                    <li>Dirección: Lima, Perú</li>
+                </ul>
+            </div>
 
-
-<section class="cuerpoInicio">
-    <article>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur exercitationem provident iusto commodi asperiores dolorem neque harum ea enim rem quas eius, ab, ullam, delectus obcaecati. Natus impedit rerum quae.</p>
-    </article>
-    <article>
-        <img src="./image/12.jpg" alt="" width="500Spx">
-    </article>
-</section>
-
-
-<footer>
-    <section>
-        <div>
-            <h2>Síguenos en nuestras redes sociales</h2>
+            <div class="footer-section social">
+                <h2>Síguenos</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="../image/logos/facebook.svg" alt="Facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="../image/logos/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.tiktok.com/es/" target="_blank"><img src="../image/logos/tik-tok.svg" alt="TikTok"></a>
+                    <a href="https://x.com/?lang=es" target="_blank"><img src="../image/logos/twitter.svg" alt="Twitter"></a>
+                    <a href="https://www.youtube.com/" target="_blank"><img src="../image/logos/youtube-play.svg" alt="YouTube"></a>
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="https://www.facebook.com/?locale=es_LA" target="_blank"><img src="./image/logos/facebook.svg" width="50px"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="./image/logos/instagram.svg" width="50px"></a>
-            <a href="https://www.tiktok.com/es/" target="_blank"><img src="./image/logos/tik-tok.svg" width="50px"></a>
-            <a href="https://x.com/?lang=es" target="_blank"><img src="./image/logos/twitter.svg" width="50px"></a>
-            <a href="https://www.youtube.com/" target="_blank"><img src="./image/logos/youtube-play.svg" width="50px"></a>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Crimson Horizon | Todos los derechos reservados | <a href="#">Términos y Condiciones</a></p>
         </div>
+    </footer>
 
-    </section>
-</footer>
-
-
+    <script src="./js/js.js"></script>
 </body>
 </html>

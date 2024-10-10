@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .cuerpoInicio {
   display: flex;
   flex-direction: row;
@@ -11,6 +12,10 @@
 .cuerpoInicio article p {
   color: beige;
   text-align: center;
+}
+
+.img1 {
+  width: 50%;
 }
 
 .galeriaDePersonajes {
@@ -35,82 +40,202 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: rgb(0, 0, 0);
+  box-sizing: border-box;
 }
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-}
-body header {
-  background-color: black;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-body header img {
-  margin-left: 50px;
-}
-body header nav {
-  margin: 0px 50px 0px 0px;
-}
-body header nav ul {
-  display: flex;
-  padding: 10px;
-  border: beige 3px solid;
-  padding: 10px;
-  list-style: none;
-}
-body header nav ul li a {
-  padding: 10px;
-  color: beige;
-  text-decoration: none;
 }
 
-@media (max-width: 320px) {
-  header {
-    margin: 0px;
+header {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Degradado */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  padding: 20px 25px;
+}
+
+header img {
+  margin-left: 0px;
+}
+
+nav {
+  position: relative;
+}
+
+.menu-icon {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ffecd2;
+}
+
+@media (max-width: 1024px) {
+  nav ul li a {
+    padding: 15px 5px;
   }
 }
-section h1 {
-  color: beige;
-  text-align: center;
+@media (max-width: 768px) {
+  header {
+    padding: 20px 35px;
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu-icon {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #ff416c;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav ul li {
+    margin: 0;
+    padding: 15px;
+    text-align: right;
+  }
+  nav ul li a {
+    padding: 10px 5px;
+  }
 }
-
-.CUERPO {
-  display: flex;
-  border: 5px solid beige;
-  color: beige;
-  margin: 20px 0px 20px 0px;
-  text-align: center;
-  font-size: 100px;
-  padding: 300px 0px 300px 0px;
+@media (max-width: 480px) {
+  header {
+    padding: 20px 30px;
+  }
 }
-
-footer section {
-  color: beige;
-  border: 5px beige solid;
-  text-align: center;
-  padding: 5px;
+@media (max-width: 320px) {
+  header {
+    padding: 20px 25px;
+  }
+}
+footer {
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  color: #fff;
+  padding: 40px 0px 0px 0px;
+}
+footer .footer-container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-footer section div {
+footer .footer-container .footer-section {
+  flex: 1 1 200px;
+  margin: 20px;
+}
+footer .footer-container .footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+footer .footer-container .footer-section p, footer .footer-container .footer-section ul {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+footer .footer-container .footer-section ul {
+  list-style: none;
+}
+footer .footer-container .footer-section ul li {
+  margin-bottom: 10px;
+}
+footer .footer-container .footer-section ul a {
+  color: #fff;
+  text-decoration: none;
+}
+footer .footer-container .footer-section ul a:hover {
+  color: #f0a500; /* Efecto hover */
+}
+footer .footer-container .social-icons {
   display: flex;
-  margin: 10px;
-  margin: 0px 30px 0px 30px;
+  gap: 15px;
 }
-footer section div h2 {
-  padding: 10px;
+footer .footer-container .social-icons a img {
+  width: 40px;
+  transition: transform 0.3s ease;
 }
-footer section div a {
-  padding: 2px;
+footer .footer-container .social-icons a img:hover {
+  transform: scale(1.2);
 }
-footer section div a img {
-  border: 1px beige solid;
+footer .footer-bottom {
+  background-color: #222;
+  padding: 20px 0;
+  text-align: center;
+}
+footer .footer-bottom p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+footer .footer-bottom p a {
+  color: #f0a500;
+  text-decoration: none;
+}
+footer .footer-bottom p a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo para el Preloader */
+/* Estilo para el Preloader */
+/* Estilo para el Preloader */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2); /* Fondo traslúcido */
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px); /* Efecto borroso */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Estilo para el GIF */
+#loader-gif {
+  width: 150px; /* Ajusta el tamaño del GIF */
+  height: auto;
+}
+
+/* Estilos que se aplicarán después de cargar la página */
+#contenido {
+  /* Aquí puedes poner los estilos normales de tu página */
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 1s ease-in;
+}
+
+body {
+  font-family: Arial, sans-serif;
 }/*# sourceMappingURL=sass.css.map */
