@@ -87,6 +87,11 @@
   gap: 20px; /* Espacio entre las cartas */
 }
 
+.imgPersonajes {
+  width: 50%;
+  height: 20%;
+}
+
 .logoRangos {
   width: 200px;
 }
