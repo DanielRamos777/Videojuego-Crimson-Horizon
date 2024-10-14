@@ -1,23 +1,193 @@
 @charset "UTF-8";
+/* Animación Fade-Out para Preloader */
+#preloader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOut 1.5s forwards;
+  animation-delay: 2s;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+/* Mobile First Design */
+/* Hero Section */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  /* Para pantallas más grandes */
+}
+.hero-section .hero-content {
+  padding: 20px;
+}
+.hero-section .hero-content h1 {
+  font-size: 2.5rem; /* Ajustamos para pantallas pequeñas */
+}
+.hero-section .hero-content p {
+  font-size: 1.2rem;
+}
+.hero-section .hero-content .cta-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .hero-section .hero-content h1 {
+    font-size: 4rem;
+  }
+  .hero-section .hero-content p {
+    font-size: 1.5rem;
+  }
+  .hero-section .hero-content .cta-button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Características del Juego */
+.features-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+}
+.features-section h2 {
+  font-size: 2rem; /* Ajustado para pantallas pequeñas */
+  margin-bottom: 20px;
+}
+.features-section .features-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Mostrar en una sola columna en móviles */
+  gap: 20px;
+}
+.features-section .features-grid .feature-item {
+  padding: 20px;
+}
+.features-section .features-grid .feature-item img {
+  width: 50px; /* Ajustamos el tamaño de los íconos */
+  margin-bottom: 10px;
+}
+.features-section .features-grid .feature-item h3 {
+  font-size: 1.5rem;
+}
+.features-section .features-grid .feature-item p {
+  font-size: 1rem;
+  color: #666;
+}
+@media (min-width: 768px) {
+  .features-section h2 {
+    font-size: 2.5rem;
+  }
+  .features-section .features-grid {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas/grandes */
+    gap: 30px;
+  }
+  .features-section .features-grid .feature-item img {
+    width: 80px; /* Iconos más grandes en pantallas grandes */
+  }
+}
+
+/* Cuerpo de Inicio */
 .cuerpoInicio {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 70px;
+  flex-direction: column; /* Columna en móviles */
+  margin: 30px 20px;
+  gap: 20px;
 }
 .cuerpoInicio article {
-  display: flex;
-  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cuerpoInicio article h2 {
+  font-size: 1.8rem; /* Ajustado para móviles */
 }
 .cuerpoInicio article p {
-  color: black;
+  font-size: 1rem;
+  color: #333;
+  text-align: justify;
+}
+.cuerpoInicio article img {
+  width: 100%;
+  border-radius: 10px;
+}
+@media (min-width: 768px) {
+  .cuerpoInicio {
+    flex-direction: row; /* Filas en pantallas grandes */
+    justify-content: space-between;
+  }
+  .cuerpoInicio article {
+    width: 45%; /* Cada artículo toma el 45% del ancho */
+  }
+}
+
+/* Call to Action */
+.cta-section {
   text-align: center;
+  padding: 50px 20px; /* Aumentar padding en la sección para mayor espacio */
+  background-color: #ff4b2b;
+  color: white;
+  /* Ajustes para pantallas grandes */
+}
+.cta-section h2 {
+  font-size: 2rem; /* Ajustado para móviles */
+  margin-bottom: 20px; /* Añadir margen inferior al título */
+}
+.cta-section .cta-button {
+  display: inline-block; /* Mantener el botón inline-block */
+  padding: 15px 30px; /* Aumentar el padding del botón */
+  font-size: 1.2rem;
+  background-color: white;
+  color: #ff4b2b;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+  margin-top: 20px; /* Añadir espacio entre el botón y el título */
+}
+.cta-section .cta-button:hover {
+  background-color: #d6391d;
+  color: white;
+}
+@media (min-width: 768px) {
+  .cta-section h2 {
+    font-size: 2.5rem;
+  }
+  .cta-section .cta-button {
+    padding: 20px 40px; /* Más grande en pantallas grandes */
+    font-size: 1.4rem;
+  }
 }
 
-.img1 {
-  width: 50%;
+/* Animación de fadeIn */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
+/* Animación de fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 /* Estilos generales para la tarjeta */
 .card-container {
   width: 300px;
@@ -96,6 +266,70 @@
   width: 200px;
 }
 
+.map-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  /* Estilos personalizados por tipo de mapa */
+}
+.map-section .map-container {
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+.map-section .map-container img {
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.map-section .map-container h2 {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+.map-section .map-container p {
+  font-size: 1em;
+  color: #666;
+  padding: 0 10px;
+}
+.map-section .ciudad-map {
+  background-color: #d1e7dd; /* Verde claro */
+}
+.map-section .ciudad-map h2 {
+  color: #198754; /* Verde */
+}
+.map-section .desert-map {
+  background-color: #fdf2e9; /* Beige claro */
+}
+.map-section .desert-map h2 {
+  color: #c56a11; /* Naranja */
+}
+.map-section .snow-map {
+  background-color: #f8f9fa; /* Gris claro */
+}
+.map-section .snow-map h2 {
+  color: #6c757d; /* Gris */
+}
+.map-section .plain-map {
+  background-color: #e2eafc; /* Azul claro */
+}
+.map-section .plain-map h2 {
+  color: #0d6efd; /* Azul */
+}
+.map-section .jungle-map {
+  background-color: #e9f7df; /* Verde claro */
+}
+.map-section .jungle-map h2 {
+  color: #28a745; /* Verde oscuro */
+}
+.map-section .multibiome-map {
+  background-color: #ffe5e9; /* Rosa claro */
+}
+.map-section .multibiome-map h2 {
+  color: #d63384; /* Rosa fuerte */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -103,11 +337,42 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+  font-family: "Montserrat", sans-serif; /* Fuente moderna y estilizada */
+  font-size: 3.5rem; /* Tamaño grande para escritorio */
+  font-weight: 700; /* Negrita para mayor impacto */
+  color: #ff4b2b; /* Color principal llamativo */
+  text-align: center; /* Centra el título */
+  text-transform: uppercase; /* Todo en mayúsculas */
+  letter-spacing: 2px; /* Espaciado entre letras */
+  margin-bottom: 20px;
+  padding: 10px;
+  position: relative;
+  /* Sombra para dar profundidad sin animaciones */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+  /* Escalabilidad para dispositivos móviles */
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+/* Alternativa: Borde inferior decorativo */
 header {
-  background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Degradado */
+  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  background-size: 200% 200%;
+  animation: gradienteAnimadoHeader 5s ease infinite;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-evenly;
@@ -126,6 +391,17 @@ nav {
   position: relative;
 }
 
+@keyframes gradienteAnimadoHeader {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .menu-icon {
   font-size: 30px;
   color: white;

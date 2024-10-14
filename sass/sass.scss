@@ -2,6 +2,7 @@
 @import "inicio";
 @import "personajes";
 @import "rangos";
+@import "mapas";
 * {
     margin: 0;
     padding: 0;
@@ -9,28 +10,76 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+//----------------------------------------H1
+h1 {
+    font-family: 'Montserrat', sans-serif; /* Fuente moderna y estilizada */
+    font-size: 3.5rem; /* Tamaño grande para escritorio */
+    font-weight: 700; /* Negrita para mayor impacto */
+    color: #ff4b2b; /* Color principal llamativo */
+    text-align: center; /* Centra el título */
+    text-transform: uppercase; /* Todo en mayúsculas */
+    letter-spacing: 2px; /* Espaciado entre letras */
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
 
+    /* Sombra para dar profundidad sin animaciones */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.15);
+
+    /* Escalabilidad para dispositivos móviles */
+    @media (max-width: 768px) {
+        font-size: 2.8rem;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 2.2rem;
+    }
+}
+
+/* Alternativa: Borde inferior decorativo */
+
+
+//----------------------------------------------------Header
 header {
-    background: linear-gradient(90deg, #ff416c, #ff4b2b); /* Degradado */
+    background: $colorTema2; // Usar el color animado aquí
+    background-size: 200% 200%; // Amplía el gradiente para suavizar la transición
+    animation: gradienteAnimadoHeader 5s ease infinite; // La animación dura 10 segundos y se repite infinitamente
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding: 20px 25px;
-}
+    justify-content: space-evenly; // Espaciado uniforme entre elementos
+    align-items: center; // Centra verticalmente
+    position: sticky; // Mantiene el header en la parte superior
+    top: 0; // Alinea en la parte superior de la ventana
+    z-index: 100; // Asegura que esté por encima de otros elementos
+    padding: 20px 25px; // Espaciado interno
+  }
+  
+  // Estilos adicionales para las imágenes en el header
+  header img {
+    margin-left: 0px; // Alineación de la imagen
+  }
+  
+  // Estilos para el nav dentro del header
+  nav {
+    position: relative; // Estilo básico para el nav
+  }
 
-header img {
-    margin-left: 0px;
-}
-
-nav {
-    position: relative;
-}
+  @keyframes gradienteAnimadoHeader {
+    0% {
+      background-position: 0% 50%; // Inicia en el 0%
+    }
+    50% {
+      background-position: 100% 50%; // Se mueve hasta el 100%
+    }
+    100% {
+      background-position: 0% 50%; // Vuelve al inicio
+    }
+  }
+//------------------------------------------------------------------------------------------------
 
 .menu-icon {
     font-size: 30px;
