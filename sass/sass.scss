@@ -1,8 +1,10 @@
 @import "tema";
 @import "inicio";
 @import "personajes";
-@import "rangos";
+@import "acercaDe";
 @import "mapas";
+@import "jugabilidad";
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +14,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 //----------------------------------------H1
 h1 {
@@ -55,7 +57,7 @@ header {
     position: sticky; // Mantiene el header en la parte superior
     top: 0; // Alinea en la parte superior de la ventana
     z-index: 100; // Asegura que esté por encima de otros elementos
-    padding: 20px 25px; // Espaciado interno
+    padding: 5px 25px; // Espaciado interno
   }
   
   // Estilos adicionales para las imágenes en el header
@@ -117,7 +119,7 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     header{
-        padding: 20px 35px;
+        padding: 5px 35px;
         display: flex;
         justify-content: space-around;
     }
@@ -155,12 +157,12 @@ nav ul li a:hover {
 
 @media (max-width: 480px) {
     header{
-        padding: 20px 30px;
+        padding: 5px 30px;
     }
 }
 @media (max-width: 320px) {
     header{
-        padding: 20px 25px;
+        padding: 5px 25px;
     }
 }
 
@@ -280,8 +282,4 @@ footer {
     /* Aquí puedes poner los estilos normales de tu página */
     opacity: 0; /* Inicialmente oculto */
     transition: opacity 1s ease-in;
-}
-
-body {
-    font-family: Arial, sans-serif;
 }

@@ -20,40 +20,56 @@
   }
 }
 /* Mobile First Design */
-/* Hero Section */
+/* Estilos para la sección del héroe */ /* Estilos para la sección del héroe */
 .hero-section {
+  position: relative;
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   color: white;
-  /* Para pantallas más grandes */
+  text-align: center;
+  overflow: hidden;
 }
-.hero-section .hero-content {
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1; /* Hace que el video quede detrás del contenido */
+}
+
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Hace que el video no sea interactivo */
+}
+
+.hero-content {
+  z-index: 1; /* Asegura que el contenido esté por encima del video */
   padding: 20px;
 }
-.hero-section .hero-content h1 {
-  font-size: 2.5rem; /* Ajustamos para pantallas pequeñas */
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff4500;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
 }
-.hero-section .hero-content p {
-  font-size: 1.2rem;
-}
-.hero-section .hero-content .cta-button {
-  padding: 10px 20px;
-  font-size: 1rem;
-}
-@media (min-width: 768px) {
-  .hero-section .hero-content h1 {
-    font-size: 4rem;
-  }
-  .hero-section .hero-content p {
-    font-size: 1.5rem;
-  }
-  .hero-section .hero-content .cta-button {
-    padding: 15px 30px;
-    font-size: 1.2rem;
-  }
+
+.cta-button:hover {
+  background-color: #e63e00;
 }
 
 /* Características del Juego */
@@ -330,6 +346,77 @@
   color: #d63384; /* Rosa fuerte */
 }
 
+/* Sección de Contador de Logros */
+.achievement-counter {
+  background-color: #1e1e1e;
+  padding: 50px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.achievement-counter .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.achievement-counter .section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #ffcc00;
+}
+
+.counter-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.counter-item {
+  flex: 1 1 30%;
+  margin: 20px;
+  padding: 30px;
+  background-color: #292929;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.counter-item:hover {
+  transform: scale(1.05);
+}
+
+.counter-item i {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.counter-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.counter-item p {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.counter {
+  font-weight: bold;
+  color: #ffcc00;
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .counter-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter-item {
+    width: 100%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -339,7 +426,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Press Start 2P", cursive;
 }
 
 h1 {
@@ -380,7 +467,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  padding: 20px 25px;
+  padding: 5px 25px;
 }
 
 header img {
@@ -434,7 +521,7 @@ nav ul li a:hover {
 }
 @media (max-width: 768px) {
   header {
-    padding: 20px 35px;
+    padding: 5px 35px;
     display: flex;
     justify-content: space-around;
   }
@@ -465,12 +552,12 @@ nav ul li a:hover {
 }
 @media (max-width: 480px) {
   header {
-    padding: 20px 30px;
+    padding: 5px 30px;
   }
 }
 @media (max-width: 320px) {
   header {
-    padding: 20px 25px;
+    padding: 5px 25px;
   }
 }
 footer {
@@ -569,8 +656,4 @@ footer .footer-bottom p a:hover {
   /* Aquí puedes poner los estilos normales de tu página */
   opacity: 0; /* Inicialmente oculto */
   transition: opacity 1s ease-in;
-}
-
-body {
-  font-family: Arial, sans-serif;
 }/*# sourceMappingURL=sass.css.map */
