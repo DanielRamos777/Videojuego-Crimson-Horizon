@@ -360,77 +360,57 @@
   color: #d63384; /* Rosa fuerte */
 }
 
-/* Sección de Contador de Logros */
-.achievement-counter {
-  background-color: #1e1e1e;
-  padding: 50px 0;
-  text-align: center;
-  color: #fff;
+/* Estilos para la sección "Cómo se Juega" */
+.CUERPO {
+  background-color: #f9f9f9; /* Color de fondo suave */
+  padding: 20px; /* Espaciado interior */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 20px auto; /* Centrado horizontal */
+  max-width: 800px; /* Ancho máximo para la sección */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
 }
 
-.achievement-counter .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+/* Estilos para los encabezados */
+.CUERPO h2 {
+  font-size: 24px; /* Tamaño de fuente grande para encabezados */
+  color: #333; /* Color del texto */
+  margin-top: 20px; /* Espaciado superior */
+  margin-bottom: 10px; /* Espaciado inferior */
+  border-bottom: 2px solid #ffd441; /* Línea inferior decorativa */
+  padding-bottom: 5px; /* Espaciado inferior para la línea */
 }
 
-.achievement-counter .section-title {
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #ffcc00;
+/* Estilos para los párrafos */
+.CUERPO p {
+  font-size: 16px; /* Tamaño de fuente para párrafos */
+  line-height: 1.6; /* Altura de línea para mejor legibilidad */
+  color: #555; /* Color del texto */
+  margin-bottom: 15px; /* Espaciado inferior */
 }
 
-.counter-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+/* Estilos para listas */
+.CUERPO ul {
+  list-style-type: disc; /* Tipo de viñeta */
+  padding-left: 20px; /* Espaciado izquierdo */
 }
 
-.counter-item {
-  flex: 1 1 30%;
-  margin: 20px;
-  padding: 30px;
-  background-color: #292929;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease;
+.CUERPO li {
+  margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
 }
 
-.counter-item:hover {
-  transform: scale(1.05);
+/* Estilos para texto destacado */
+.CUERPO strong {
+  color: #ff5733; /* Color destacado para texto */
 }
 
-.counter-item i {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #ffcc00;
+.imagen-jugabilidad {
+  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 20px 0; /* Espaciado superior e inferior */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
 }
 
-.counter-item h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.counter-item p {
-  font-size: 32px;
-  margin-top: 0;
-}
-
-.counter {
-  font-weight: bold;
-  color: #ffcc00;
-}
-
-/* Responsive para pantallas más pequeñas */
-@media (max-width: 768px) {
-  .counter-container {
-    flex-direction: column;
-    align-items: center;
-  }
-  .counter-item {
-    width: 100%;
-  }
-}
 * {
   margin: 0;
   padding: 0;
