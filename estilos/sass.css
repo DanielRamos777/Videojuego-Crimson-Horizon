@@ -278,6 +278,20 @@
   height: 20%;
 }
 
+.card-front h2 {
+  margin: 0; /* Elimina el margen del título */
+  padding: 10px 0; /* Añade algo de padding */
+  font-size: 1.5em; /* Tamaño de fuente */
+  color: #fff; /* Color del texto */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra del texto para mejor legibilidad */
+  position: absolute; /* Para posicionarlo sobre la imagen */
+  width: 100%; /* Ancho completo */
+  bottom: 1px; /* Coloca el título en la parte inferior */
+  text-align: center; /* Centra el texto */
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor visibilidad */
+  border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+}
+
 .logoRangos {
   width: 200px;
 }
@@ -426,7 +440,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Press Start 2P", cursive;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 h1 {

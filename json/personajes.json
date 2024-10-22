@@ -1,0 +1,126 @@
+{
+    "personajes": [
+        {
+            "nombre": "Luzia",
+            "tamaño": "1.80 cm",
+            "edad": 23,
+            "descripcion": "Guerrera peruana con un poncho tradicional y equipo táctico, experta en combate y supervivencia. Luzia protege su hogar en los Andes, combinando sabiduría ancestral con habilidades modernas.",
+            "profesion": "Guerrera Táctica",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/female_Peruvian.png?alt=media&token=a1887a39-6e89-4a80-b1b0-258fd6f74820"
+        }
+        ,{
+            "nombre": "Xiao",
+            "tamaño": "1.75 cm",
+            "edad": 22,
+            "descripcion": "Hábil guerrero chino que combina técnicas de combate tradicionales con habilidades modernas. Viste un traje de combate elegante y práctico, listo para enfrentar cualquier desafío en el campo de batalla.",
+            "profesion": "Guerrero Estratégico",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/Chinese.png?alt=media&token=a11e19d7-7534-4910-ab6f-eb8ae33adf4b"
+        }
+        ,{
+            "nombre": "Inti",
+            "tamaño": "1.85 cm",
+            "edad": 28,
+            "descripcion": "Inti es un guerrero peruano que combina la tradición con la modernidad. Viste un poncho colorido que representa su herencia cultural y está equipado con armamento moderno, listo para defender su tierra.",
+            "profesion": "Guerrero Moderno",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/Peruvian.png?alt=media&token=56dd8289-03f8-4f8c-b1e6-b43c2159e1f2"
+        }
+        ,{
+            "nombre": "Ren",
+            "tamaño": "1.80 cm",
+            "edad": 26,
+            "descripcion": "Ren es un guerrero antropomórfico con apariencia de zorro, que combina agilidad y destreza en el combate. Viste un traje táctico adaptado para la caza, con un arco y flechas como su principal armamento.",
+            "profesion": "Cazador Antropomórfico",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/anthropomorphic.png?alt=media&token=effb71ef-127c-4afd-bdd2-c7ebe17ada34"
+        }
+        ,{
+            "nombre": "Boris",
+            "tamaño": "2.20 cm",
+            "edad": 35,
+            "descripcion": "Boris es un imponente guerrero antropomórfico con la apariencia de un oso. Viste equipo táctico militar que complementa su fuerza bruta, preparado para la batalla con armamento pesado.",
+            "profesion": "Soldado de Élite",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/anthropomorphic2.png?alt=media&token=f24e456f-2115-4576-a30f-7c2eb52b0b27"
+        }
+        ,{
+            "nombre": "Lucas",
+            "tamaño": "1.75 cm",
+            "edad": 26,
+            "descripcion": "Lucas es un sobreviviente astuto que combina estilo urbano con funcionalidad. Con un bate de béisbol como su arma principal y un estilo relajado, está siempre preparado para enfrentarse a cualquier desafío.",
+            "profesion": "Sobreviviente Urbano",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/civilian.png?alt=media&token=3045235e-b72f-4b06-8f02-fbb3e258c0ba"
+        }
+        ,{
+            "nombre": "Cody",
+            "tamaño": "1.85 cm",
+            "edad": 30,
+            "descripcion": "Cody es un vaquero audaz que vive por el código del oeste. Con su sombrero de ala ancha y su abrigo de cuero, siempre está listo para cualquier duelo o aventura en la frontera.",
+            "profesion": "Vaquero",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/cowboy.png?alt=media&token=7d48324c-59e1-49eb-97f0-00fa1b94619b"
+        }
+        ,{
+            "nombre": "Elara",
+            "tamaño": "1.70 cm",
+            "edad": 25,
+            "descripcion": "Elara es una experta en sigilo que se mueve entre las sombras. Con su capa verde y equipo táctico, está siempre lista para la infiltración y el combate encubierto.",
+            "profesion": "Asesina Silenciosa",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/female.png?alt=media&token=25b266fe-e4bb-4642-811f-b403d689afac"
+        }
+        ,{
+            "nombre": "Mei Ling",
+            "tamaño": "1.65 cm",
+            "edad": 22,
+            "descripcion": "Mei Ling es una guerrera ágil que combina la elegancia de la tradición con la efectividad de la modernidad. Viste un traje inspirado en la cultura china, equipada con un sable y herramientas de combate para enfrentar cualquier desafío.",
+            "profesion": "Guerrera de Combate",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/female_Chinese.png?alt=media&token=5287cab1-b811-4cb9-a0f9-5a01cec04b25"
+        }
+        ,{
+            "nombre": "Tessa",
+            "tamaño": "1.68 cm",
+            "edad": 24,
+            "descripcion": "Tessa es una sobreviviente ingeniosa y adaptable. Con su bate de béisbol en mano y un estilo urbano, está lista para enfrentar cualquier situación mientras navega por un mundo caótico.",
+            "profesion": "Sobreviviente",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/female_civilian.png?alt=media&token=79104a58-a44a-40a1-b75d-6a9a65696034"
+        }
+        ,{
+            "nombre": "Ariana",
+            "tamaño": "1.70 cm",
+            "edad": 27,
+            "descripcion": "Ariana es una soldado de élite, entrenada en tácticas de combate y supervivencia. Equipado con armamento avanzado y un uniforme de camuflaje, está siempre lista para la acción en el campo de batalla.",
+            "profesion": "Soldado de Élite",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/female_military.png?alt=media&token=26810bb4-219a-461a-bf26-60aed7d891c6"
+        }
+        ,{
+            "nombre": "Ryder",
+            "tamaño": "1.85 cm",
+            "edad": 30,
+            "descripcion": "Ryder es un soldado altamente entrenado, equipado con tecnología avanzada y tácticas de combate. Su uniforme de camuflaje y su armamento lo hacen un adversario formidable en cualquier misión.",
+            "profesion": "Operativo Especial",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/military-style.png?alt=media&token=ea462919-0eb7-43c2-8997-e3a347609c5c"
+        }
+        ,{
+            "nombre": "Kazuki",
+            "tamaño": "1.70 cm",
+            "edad": 21,
+            "descripcion": "Kazuki es un joven guerrero con una personalidad única, que mezcla su amor por la cultura pop con habilidades de combate. Viste una sudadera con una ilustración, acompañado de un katana, mostrando su estilo moderno y audaz.",
+            "profesion": "Guerrero Cultural",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/otakui.png?alt=media&token=bc80fd25-5b46-4f26-a9b1-055e7427b5bc"
+        }
+        ,{
+            "nombre": "Rook",
+            "tamaño": "1.80 cm",
+            "edad": 29,
+            "descripcion": "Rook es un mercenario en un mundo post-apocalíptico. Equipado con armamento pesado y un traje de combate improvisado, utiliza su astucia y habilidades de supervivencia para navegar en un entorno hostil.",
+            "profesion": "Mercenario",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/random.png?alt=media&token=ddeec54b-8bcc-4fef-b69a-97b96e1df80f"
+        }
+        ,{
+            "nombre": "Aiko",
+            "tamaño": "1.65 cm",
+            "edad": 20,
+            "descripcion": "Aiko es una joven audaz con un estilo urbano y vibrante. Con su sudadera de diseño y una katana a la espalda, combina su amor por la cultura pop con habilidades de combate en un mundo caótico.",
+            "profesion": "Guerrera Urbana",
+            "imagen": "https://firebasestorage.googleapis.com/v0/b/video-juego-9453c.appspot.com/o/realistic.png?alt=media&token=1148eef1-0aac-4fef-ba28-cbd25c068bf0"
+          }
+          
+    ]
+  }
+  
