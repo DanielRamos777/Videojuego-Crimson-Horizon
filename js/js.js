@@ -18,3 +18,5 @@ window.addEventListener("load", function() {
         contenido.style.opacity = "1";
     }, 1500); 
 });
+
+//.----------------------animacion del body

@@ -16,12 +16,35 @@ body {
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(270deg, #ff416c, #ff4b2b, #ff416c, #ff4b2b);
+    background-size: 800% 800%;
+    animation: colorAnimation 15s ease infinite;
+  }
+  
+  /* Definimos la animación de colores */
+  @keyframes colorAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 //----------------------------------------H1
 h1 {
     font-family: 'Montserrat', sans-serif; /* Fuente moderna y estilizada */
     font-size: 3.5rem; /* Tamaño grande para escritorio */
     font-weight: 700; /* Negrita para mayor impacto */
-    color: #ff4b2b; /* Color principal llamativo */
+    color: #ffffff; /* Color principal llamativo */
     text-align: center; /* Centra el título */
     text-transform: uppercase; /* Todo en mayúsculas */
     letter-spacing: 2px; /* Espaciado entre letras */

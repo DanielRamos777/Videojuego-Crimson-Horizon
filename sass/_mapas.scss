@@ -1,30 +1,41 @@
 .map-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mínimo de 300px por carta en pantallas más pequeñas */
+    gap: 20px; /* Espacio entre cartas */
     padding: 20px;
 
     .map-container {
         text-align: center;
         border: 1px solid #ccc;
-        padding: 15px;
+        padding: 15px; /* Ajustar el padding interno */
         border-radius: 10px;
         background-color: #f9f9f9;
-        
+        transition: transform 0.2s, box-shadow 0.2s; /* Transiciones suaves */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para un efecto de profundidad */
+
         img {
             border-radius: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 10px; /* Espacio debajo de las imágenes */
+            width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+            height: auto; /* Mantiene la proporción de la imagen */
         }
 
         h2 {
-            font-size: 1.5em;
-            margin: 10px 0;
+            font-size: 1.5em; /* Tamaño de fuente para títulos */
+            margin: 10px 0; /* Margen alrededor del título */
+            transition: color 0.3s; /* Transición suave para el color */
         }
 
         p {
-            font-size: 1em;
+            font-size: 0.9em; /* Tamaño de texto ajustado */
             color: #666;
-            padding: 0 10px;
+            padding: 0 10px; /* Padding horizontal */
+        }
+
+        /* Efecto de hover */
+        &:hover {
+            transform: scale(1.05); /* Escalar la carta al pasar el mouse */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
         }
     }
 
@@ -70,4 +81,56 @@
             color: #d63384; /* Rosa fuerte */
         }
     }
+}
+
+/* Responsividad adicional */
+@media (max-width: 768px) {
+    .map-container {
+        padding: 15px; /* Ajustar padding en pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Ajustar tamaño de fuente en pantallas pequeñas */
+    }
+
+    p {
+        font-size: 0.9em; /* Ajustar tamaño de texto en pantallas pequeñas */
+    }
+}
+
+/* Ajustes específicos para pantallas de 375px */
+@media (max-width: 375px) {
+    .map-section {
+        padding: 10px; /* Ajustar padding en la sección */
+
+        .map-container {
+            padding: 10px; /* Ajustar aún más el padding */
+
+            h2 {
+                font-size: 1.2em; /* Tamaño de fuente reducido en pantallas de 375px */
+            }
+
+            p {
+                font-size: 0.8em; /* Tamaño de texto reducido en pantallas de 375px */
+            }
+
+            img {
+                width: 100%; /* Asegura que la imagen ocupe el ancho del contenedor */
+                height: auto; /* Mantiene la proporción de la imagen */
+            }
+        }
+    }
+}
+
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 1200px) {
+    .map-section {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Aumentar el tamaño mínimo a 400px en pantallas grandes */
+    }
+
+    .map-container {
+        padding: 25px; /* Más padding para cartas grandes */
+    }
+
 }

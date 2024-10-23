@@ -223,3 +223,80 @@
     transform: translateY(0);
   }
 }
+//-------------Carrusel--------------------
+
+/* Reset de márgenes y paddings para el carrusel */
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1024px;
+  overflow: hidden;
+  margin: 0 auto; /* Centramos el carrusel */
+}
+
+.carousel-inner {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  min-width: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-text h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.carousel-text p {
+  font-size: 1.2rem;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .carousel-text h2 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-text p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 1.5rem;
+  }
+}
