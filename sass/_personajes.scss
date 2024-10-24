@@ -24,13 +24,13 @@
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Oculta la cara posterior cuando no está visible */
-    border: 2px solid #ffd441;
+    border: 2px solid white;
     border-radius: 10px;
 }
 
 /* Frente de la carta con el degradado circular */
 .card-front {
-    background: radial-gradient(circle, #ffd441, #ff7541); /* Degradado circular */
+    background: radial-gradient(circle, #038587, #015a94); /* Degradado circular */
 }
 
 .card-front img {
@@ -42,7 +42,7 @@
 
 /* Parte posterior de la carta con la descripción */
 .card-back {
-    background: radial-gradient(circle, #ff7541, #ff416c); /* Degradado circular */
+    background: radial-gradient(circle, #038587, #015a94); /* Degradado circular */
     color: #fff;
     text-align: center;
     transform: rotateY(180deg); /* Oculta la parte posterior al principio */

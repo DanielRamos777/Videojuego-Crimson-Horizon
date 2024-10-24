@@ -76,11 +76,12 @@
 .features-section {
   padding: 20px;
   text-align: center;
-  background-color: #f9f9f9;
+  background-color: #038587;
 }
 .features-section h2 {
   font-size: 2rem; /* Ajustado para pantallas pequeñas */
   margin-bottom: 20px;
+  color: white;
 }
 .features-section .features-grid {
   display: grid;
@@ -96,10 +97,11 @@
 }
 .features-section .features-grid .feature-item h3 {
   font-size: 1.5rem;
+  color: white;
 }
 .features-section .features-grid .feature-item p {
   font-size: 1rem;
-  color: #666;
+  color: white;
 }
 @media (min-width: 768px) {
   .features-section h2 {
@@ -127,10 +129,11 @@
 }
 .cuerpoInicio article h2 {
   font-size: 1.8rem; /* Ajustado para móviles */
+  color: white;
 }
 .cuerpoInicio article p {
   font-size: 1rem;
-  color: #333;
+  color: white;
   text-align: justify;
 }
 .cuerpoInicio article img {
@@ -151,27 +154,28 @@
 .cta-section {
   text-align: center;
   padding: 50px 20px; /* Aumentar padding en la sección para mayor espacio */
-  background-color: #ff4b2b;
+  background-color: #038587;
   color: white;
   /* Ajustes para pantallas grandes */
 }
 .cta-section h2 {
   font-size: 2rem; /* Ajustado para móviles */
-  margin-bottom: 20px; /* Añadir margen inferior al título */
+  margin-bottom: 20px;
+  color: white; /* Añadir margen inferior al título */
 }
 .cta-section .cta-button {
   display: inline-block; /* Mantener el botón inline-block */
   padding: 15px 30px; /* Aumentar el padding del botón */
   font-size: 1.2rem;
   background-color: white;
-  color: #ff4b2b;
+  color: #015a94;
   text-decoration: none;
   border-radius: 50px;
   transition: background-color 0.3s ease;
   margin-top: 20px; /* Añadir espacio entre el botón y el título */
 }
 .cta-section .cta-button:hover {
-  background-color: #d6391d;
+  background-color: #015a94;
   color: white;
 }
 @media (min-width: 768px) {
@@ -303,13 +307,13 @@ button {
   width: 100%;
   height: 100%;
   backface-visibility: hidden; /* Oculta la cara posterior cuando no está visible */
-  border: 2px solid #ffd441;
+  border: 2px solid white;
   border-radius: 10px;
 }
 
 /* Frente de la carta con el degradado circular */
 .card-front {
-  background: radial-gradient(circle, #ffd441, #ff7541); /* Degradado circular */
+  background: radial-gradient(circle, #038587, #015a94); /* Degradado circular */
 }
 
 .card-front img {
@@ -322,7 +326,7 @@ button {
 
 /* Parte posterior de la carta con la descripción */
 .card-back {
-  background: radial-gradient(circle, #ff7541, #ff416c); /* Degradado circular */
+  background: radial-gradient(circle, #038587, #015a94); /* Degradado circular */
   color: #fff;
   text-align: center;
   transform: rotateY(180deg); /* Oculta la parte posterior al principio */
@@ -550,23 +554,10 @@ body {
   margin: 0;
   padding: 0;
   height: 100vh;
-  background: linear-gradient(270deg, #ff416c, #ff4b2b, #ff416c, #ff4b2b);
+  background: #04315a;
   background-size: 800% 800%;
-  animation: colorAnimation 15s ease infinite;
 }
 
-/* Definimos la animación de colores */
-@keyframes colorAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 h1 {
   font-family: "Montserrat", sans-serif; /* Fuente moderna y estilizada */
   font-size: 3.5rem; /* Tamaño grande para escritorio */
@@ -595,9 +586,8 @@ h1 {
 
 /* Alternativa: Borde inferior decorativo */
 header {
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  background: #07203f;
   background-size: 200% 200%;
-  animation: gradienteAnimadoHeader 5s ease infinite;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: space-evenly;
@@ -616,17 +606,6 @@ nav {
   position: relative;
 }
 
-@keyframes gradienteAnimadoHeader {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
 .menu-icon {
   font-size: 30px;
   color: white;
@@ -649,7 +628,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ffecd2;
+  color: #015a94;
 }
 
 @media (max-width: 1024px) {
@@ -669,7 +648,7 @@ nav ul li a:hover {
   nav ul {
     display: none;
     flex-direction: column;
-    background: #ff416c;
+    background: #038587;
     position: absolute;
     top: 100%;
     right: 0;
@@ -699,7 +678,7 @@ nav ul li a:hover {
   }
 }
 footer {
-  background: linear-gradient(90deg, #ff416c, #ff4b2b);
+  background: #07203f;
   color: #fff;
   padding: 40px 0px 0px 0px;
 }
@@ -749,7 +728,7 @@ footer .footer-container .social-icons a img:hover {
   transform: scale(1.2);
 }
 footer .footer-bottom {
-  background-color: #222;
+  background-color: black;
   padding: 20px 0;
   text-align: center;
 }

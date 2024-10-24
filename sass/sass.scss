@@ -21,23 +21,10 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(270deg, #ff416c, #ff4b2b, #ff416c, #ff4b2b);
+    background: $colorTema4;
     background-size: 800% 800%;
-    animation: colorAnimation 15s ease infinite;
   }
   
-  /* Definimos la animación de colores */
-  @keyframes colorAnimation {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
   
 //----------------------------------------H1
 h1 {
@@ -70,9 +57,8 @@ h1 {
 
 //----------------------------------------------------Header
 header {
-    background: $colorTema2; // Usar el color animado aquí
+    background: $colorTema3; // Usar el color animado aquí
     background-size: 200% 200%; // Amplía el gradiente para suavizar la transición
-    animation: gradienteAnimadoHeader 5s ease infinite; // La animación dura 10 segundos y se repite infinitamente
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-evenly; // Espaciado uniforme entre elementos
@@ -91,18 +77,6 @@ header {
   // Estilos para el nav dentro del header
   nav {
     position: relative; // Estilo básico para el nav
-  }
-
-  @keyframes gradienteAnimadoHeader {
-    0% {
-      background-position: 0% 50%; // Inicia en el 0%
-    }
-    50% {
-      background-position: 100% 50%; // Se mueve hasta el 100%
-    }
-    100% {
-      background-position: 0% 50%; // Vuelve al inicio
-    }
   }
 //------------------------------------------------------------------------------------------------
 
@@ -128,7 +102,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffecd2;
+    color: $colorTema6;
 }
 //-----------------------------------
 
@@ -154,7 +128,7 @@ nav ul li a:hover {
     nav ul {
         display: none;
         flex-direction: column;
-        background: #ff416c;
+        background: $colorTema5;
         position: absolute;
         top: 100%;
         right: 0;
@@ -193,7 +167,7 @@ nav ul li a:hover {
 
 //FOOTER-------------
 footer {
-    background: $colorTema1;
+    background: $colorTema3;
     color: #fff;
     padding: 40px 0px 0px 0px;
 
@@ -254,7 +228,7 @@ footer {
     }
 
     .footer-bottom {
-        background-color: #222;
+        background-color: $colorTema2;
         padding: 20px 0;
         text-align: center;
 
