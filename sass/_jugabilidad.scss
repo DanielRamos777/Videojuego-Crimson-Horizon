@@ -1,49 +1,162 @@
-/* Estilos para la sección "Cómo se Juega" */
-.CUERPO {
-    background-color: #f9f9f9; /* Color de fondo suave */
-    padding: 20px; /* Espaciado interior */
-    border-radius: 10px; /* Bordes redondeados */
-    margin: 20px auto; /* Centrado horizontal */
-    max-width: 800px; /* Ancho máximo para la sección */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+.jugabilidad {
+    margin: 40px auto;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    padding: 20px;
+    background-color: #038587; /* Fondo oscuro para resaltar el contenido */
+    border-radius: 8px; /* Esquinas redondeadas */
+    max-width: 1200px; /* Ancho máximo para la sección */
 }
 
-/* Estilos para los encabezados */
-.CUERPO h2 {
-    font-size: 24px; /* Tamaño de fuente grande para encabezados */
-    color: #333; /* Color del texto */
-    margin-top: 20px; /* Espaciado superior */
-    margin-bottom: 10px; /* Espaciado inferior */
-    border-bottom: 2px solid #ffd441; /* Línea inferior decorativa */
-    padding-bottom: 5px; /* Espaciado inferior para la línea */
+.jugabilidad article {
+    width: 100%;
 }
 
-/* Estilos para los párrafos */
-.CUERPO p {
-    font-size: 16px; /* Tamaño de fuente para párrafos */
-    line-height: 1.6; /* Altura de línea para mejor legibilidad */
-    color: #555; /* Color del texto */
-    margin-bottom: 15px; /* Espaciado inferior */
+.jugabilidad h2 {
+    font-size: 2.5rem;
+    text-align: center; /* Centra título */
+    margin-bottom: 20px;
 }
 
-/* Estilos para listas */
-.CUERPO ul {
-    list-style-type: disc; /* Tipo de viñeta */
-    padding-left: 20px; /* Espaciado izquierdo */
+.pasos {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; /* Espacio entre cada paso */
 }
 
-.CUERPO li {
-    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+.paso {
+    display: flex;
+    align-items: center; /* Alinea el texto y la imagen verticalmente */
+    background-color: #015a94; /* Fondo gris para cada paso */
+    border-radius: 5px; /* Esquinas redondeadas */
+    padding: 15px; /* Espacio interno */
+    transition: transform 0.3s; /* Transición suave */
 }
 
-/* Estilos para texto destacado */
-.CUERPO strong {
-    color: #ff5733; /* Color destacado para texto */
+.paso:hover {
+    transform: scale(1.02); /* Efecto de zoom al pasar el mouse */
 }
-.imagen-jugabilidad {
-    width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+
+/* Estilos para la imagen */
+.paso img {
+    width: 250px; /* Ancho de la imagen */
     height: auto; /* Mantiene la proporción de la imagen */
-    margin: 20px 0; /* Espaciado superior e inferior */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    margin-right: 20px; /* Espacio entre la imagen y el texto */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Estilo para el texto */
+.texto-paso {
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+    text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Tamaños de fuente para el título y el párrafo */
+.paso h3 {
+    font-size: 2rem; /* Aumentar el tamaño del título */
+    margin: 0 0 10px 0; /* Margen debajo del título */
+}
+
+.paso p {
+    font-size: 1.2rem; /* Aumentar el tamaño del texto */
+    text-align: justify;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .paso {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        align-items: center; /* Centra la imagen y el texto */
+    }
+    
+    .paso img {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 15px; /* Añade margen inferior */
+        width: 100%; /* Asegura que la imagen ocupe el 100% de su contenedor */
+        max-width: 300px; /* Ancho máximo para la imagen */
+    }
+
+    .texto-paso {
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .paso h3 {
+        font-size: 1.5rem; /* Tamaño del título más pequeño en móviles */
+    }
+
+    .paso p {
+        font-size: 1rem; /* Tamaño del texto más pequeño en móviles */
+    }
+}
+
+//-------------------------
+.niveles-rangos {
+    margin: 40px auto;
+    color: white;
+    max-width: 600px;
+    text-align: center; /* Centra el texto */
+}
+
+.titulo-niveles {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.nivel-container {
+    margin: 20px 0;
+}
+
+.nivel {
+    background-color: #555; /* Color de fondo de la barra */
+    border-radius: 5px;
+    height: 30px; /* Altura de la barra */
+    position: relative;
+}
+
+.barra {
+    background-color: #038587; /* Color de la barra */
+    height: 100%;
+    border-radius: 5px;
+}
+
+.nivel-info {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.texto-nivel, .texto-rango {
+    display: block; /* Asegura que cada texto esté en su propia línea */
+}
+
+.rango-imagen {
+    margin: 20px 0; /* Espacio alrededor de la imagen */
+}
+
+.imagen-rango {
+    width: 100%; /* Imagen ocupará todo el ancho del contenedor */
+    max-width: 300px; /* Ancho máximo para la imagen */
+    border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.botones-nivel {
+    margin-top: 20px; /* Espacio superior para los botones */
+    display: flex; /* Utiliza flexbox para alinear los botones */
+    justify-content: center; /* Centra los botones */
+}
+
+.btn-subir-nivel, .btn-bajar-nivel {
+    padding: 10px 20px;
+    background-color: #038587;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px; /* Espacio alrededor de los botones */
+}
+
+.btn-subir-nivel:hover, .btn-bajar-nivel:hover {
+    background-color: #015a94; /* Color al pasar el mouse */
 }

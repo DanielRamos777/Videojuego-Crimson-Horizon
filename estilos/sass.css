@@ -120,16 +120,18 @@
 .cuerpoInicio {
   display: flex;
   flex-direction: column; /* Columna en móviles */
+  align-items: center; /* Centrar horizontalmente */
   margin: 30px 20px;
   gap: 20px;
 }
 .cuerpoInicio article {
-  width: 100%;
-  margin-bottom: 20px;
+  width: 80%; /* Ancho más pequeño para centrar */
+  text-align: center; /* Centrar el texto */
 }
 .cuerpoInicio article h2 {
-  font-size: 1.8rem; /* Ajustado para móviles */
+  font-size: 2rem; /* Ajustar el tamaño del título */
   color: white;
+  margin-bottom: 10px; /* Espacio debajo del título */
 }
 .cuerpoInicio article p {
   font-size: 1rem;
@@ -137,16 +139,22 @@
   text-align: justify;
 }
 .cuerpoInicio article img {
-  width: 100%;
+  width: 70%; /* Reducir el tamaño de la imagen */
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: transform 0.3s; /* Efecto de transformación */
+}
+.cuerpoInicio article img:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
 @media (min-width: 768px) {
   .cuerpoInicio {
     flex-direction: row; /* Filas en pantallas grandes */
-    justify-content: space-between;
+    justify-content: center; /* Centrar en pantallas grandes */
   }
   .cuerpoInicio article {
     width: 45%; /* Cada artículo toma el 45% del ancho */
+    text-align: center; /* Centrar el texto */
   }
 }
 
@@ -250,24 +258,29 @@
   font-size: 1.2rem;
 }
 
-button {
+.carousel-btn {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   border: none;
   color: white;
   font-size: 2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem; /* Ajustar el padding para un mejor aspecto */
   cursor: pointer;
+  border-radius: 5px; /* Esquinas redondeadas */
+  transition: background-color 0.3s; /* Efecto de transición */
+}
+
+.carousel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Cambia el color al pasar el mouse */
 }
 
 .prev {
-  left: 10px;
+  left: 10px; /* Posición del botón anterior */
 }
 
 .next {
-  right: 10px;
+  right: 10px; /* Posición del botón siguiente */
 }
 
 @media screen and (max-width: 768px) {
@@ -403,7 +416,7 @@ button {
 }
 .map-section .map-container p {
   font-size: 0.9em; /* Tamaño de texto ajustado */
-  color: #666;
+  color: #ffffff;
   padding: 0 10px; /* Padding horizontal */
 }
 .map-section .map-container:hover {
@@ -411,40 +424,40 @@ button {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra más intensa al hacer hover */
 }
 .map-section .ciudad-map {
-  background-color: #d1e7dd; /* Verde claro */
+  background-color: #038587; /* Verde claro */
 }
 .map-section .ciudad-map h2 {
-  color: #198754; /* Verde */
+  color: #ffffff; /* Verde */
 }
 .map-section .desert-map {
-  background-color: #fdf2e9; /* Beige claro */
+  background-color: #038587; /* Beige claro */
 }
 .map-section .desert-map h2 {
-  color: #c56a11; /* Naranja */
+  color: #ffffff; /* Naranja */
 }
 .map-section .snow-map {
-  background-color: #f8f9fa; /* Gris claro */
+  background-color: #038587; /* Gris claro */
 }
 .map-section .snow-map h2 {
-  color: #6c757d; /* Gris */
+  color: #ffffff; /* Gris */
 }
 .map-section .plain-map {
-  background-color: #e2eafc; /* Azul claro */
+  background-color: #038587; /* Azul claro */
 }
 .map-section .plain-map h2 {
-  color: #0d6efd; /* Azul */
+  color: #ffffff; /* Azul */
 }
 .map-section .jungle-map {
-  background-color: #e9f7df; /* Verde claro */
+  background-color: #038587; /* Verde claro */
 }
 .map-section .jungle-map h2 {
-  color: #28a745; /* Verde oscuro */
+  color: #ffffff; /* Verde oscuro */
 }
 .map-section .multibiome-map {
-  background-color: #ffe5e9; /* Rosa claro */
+  background-color: #038587; /* Rosa claro */
 }
 .map-section .multibiome-map h2 {
-  color: #d63384; /* Rosa fuerte */
+  color: #ffffff; /* Rosa fuerte */
 }
 
 /* Responsividad adicional */
@@ -487,55 +500,161 @@ button {
     padding: 25px; /* Más padding para cartas grandes */
   }
 }
-/* Estilos para la sección "Cómo se Juega" */
-.CUERPO {
-  background-color: #f9f9f9; /* Color de fondo suave */
-  padding: 20px; /* Espaciado interior */
-  border-radius: 10px; /* Bordes redondeados */
-  margin: 20px auto; /* Centrado horizontal */
-  max-width: 800px; /* Ancho máximo para la sección */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+.jugabilidad {
+  margin: 40px auto;
+  color: white;
+  display: flex;
+  justify-content: center; /* Centra el contenido */
+  padding: 20px;
+  background-color: #038587; /* Fondo oscuro para resaltar el contenido */
+  border-radius: 8px; /* Esquinas redondeadas */
+  max-width: 1200px; /* Ancho máximo para la sección */
 }
 
-/* Estilos para los encabezados */
-.CUERPO h2 {
-  font-size: 24px; /* Tamaño de fuente grande para encabezados */
-  color: #333; /* Color del texto */
-  margin-top: 20px; /* Espaciado superior */
-  margin-bottom: 10px; /* Espaciado inferior */
-  border-bottom: 2px solid #ffd441; /* Línea inferior decorativa */
-  padding-bottom: 5px; /* Espaciado inferior para la línea */
+.jugabilidad article {
+  width: 100%;
 }
 
-/* Estilos para los párrafos */
-.CUERPO p {
-  font-size: 16px; /* Tamaño de fuente para párrafos */
-  line-height: 1.6; /* Altura de línea para mejor legibilidad */
-  color: #555; /* Color del texto */
-  margin-bottom: 15px; /* Espaciado inferior */
+.jugabilidad h2 {
+  font-size: 2.5rem;
+  text-align: center; /* Centra título */
+  margin-bottom: 20px;
 }
 
-/* Estilos para listas */
-.CUERPO ul {
-  list-style-type: disc; /* Tipo de viñeta */
-  padding-left: 20px; /* Espaciado izquierdo */
+.pasos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espacio entre cada paso */
 }
 
-.CUERPO li {
-  margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+.paso {
+  display: flex;
+  align-items: center; /* Alinea el texto y la imagen verticalmente */
+  background-color: #015a94; /* Fondo gris para cada paso */
+  border-radius: 5px; /* Esquinas redondeadas */
+  padding: 15px; /* Espacio interno */
+  transition: transform 0.3s; /* Transición suave */
 }
 
-/* Estilos para texto destacado */
-.CUERPO strong {
-  color: #ff5733; /* Color destacado para texto */
+.paso:hover {
+  transform: scale(1.02); /* Efecto de zoom al pasar el mouse */
 }
 
-.imagen-jugabilidad {
-  width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+/* Estilos para la imagen */
+.paso img {
+  width: 250px; /* Ancho de la imagen */
   height: auto; /* Mantiene la proporción de la imagen */
-  margin: 20px 0; /* Espaciado superior e inferior */
-  border-radius: 5px; /* Bordes redondeados */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+/* Estilo para el texto */
+.texto-paso {
+  flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+  text-align: left; /* Alinea el texto a la izquierda */
+}
+
+/* Tamaños de fuente para el título y el párrafo */
+.paso h3 {
+  font-size: 2rem; /* Aumentar el tamaño del título */
+  margin: 0 0 10px 0; /* Margen debajo del título */
+}
+
+.paso p {
+  font-size: 1.2rem; /* Aumentar el tamaño del texto */
+  text-align: justify;
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+  .paso {
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: center; /* Centra la imagen y el texto */
+  }
+  .paso img {
+    margin-right: 0; /* Elimina el margen derecho */
+    margin-bottom: 15px; /* Añade margen inferior */
+    width: 100%; /* Asegura que la imagen ocupe el 100% de su contenedor */
+    max-width: 300px; /* Ancho máximo para la imagen */
+  }
+  .texto-paso {
+    text-align: center; /* Centra el texto en pantallas pequeñas */
+  }
+  .paso h3 {
+    font-size: 1.5rem; /* Tamaño del título más pequeño en móviles */
+  }
+  .paso p {
+    font-size: 1rem; /* Tamaño del texto más pequeño en móviles */
+  }
+}
+.niveles-rangos {
+  margin: 40px auto;
+  color: white;
+  max-width: 600px;
+  text-align: center; /* Centra el texto */
+}
+
+.titulo-niveles {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.nivel-container {
+  margin: 20px 0;
+}
+
+.nivel {
+  background-color: #555; /* Color de fondo de la barra */
+  border-radius: 5px;
+  height: 30px; /* Altura de la barra */
+  position: relative;
+}
+
+.barra {
+  background-color: #038587; /* Color de la barra */
+  height: 100%;
+  border-radius: 5px;
+}
+
+.nivel-info {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.texto-nivel, .texto-rango {
+  display: block; /* Asegura que cada texto esté en su propia línea */
+}
+
+.rango-imagen {
+  margin: 20px 0; /* Espacio alrededor de la imagen */
+}
+
+.imagen-rango {
+  width: 100%; /* Imagen ocupará todo el ancho del contenedor */
+  max-width: 300px; /* Ancho máximo para la imagen */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.botones-nivel {
+  margin-top: 20px; /* Espacio superior para los botones */
+  display: flex; /* Utiliza flexbox para alinear los botones */
+  justify-content: center; /* Centra los botones */
+}
+
+.btn-subir-nivel, .btn-bajar-nivel {
+  padding: 10px 20px;
+  background-color: #038587;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 5px; /* Espacio alrededor de los botones */
+}
+
+.btn-subir-nivel:hover, .btn-bajar-nivel:hover {
+  background-color: #015a94; /* Color al pasar el mouse */
 }
 
 * {
