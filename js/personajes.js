@@ -43,14 +43,7 @@
                     const profesionP = document.createElement('p');
                     profesionP.innerHTML = `<strong>Profesión:</strong> ${personaje.profesion}`;
                     cardBack.appendChild(profesionP);
-    
-                    const habilidadesP = document.createElement('p');
-                    habilidadesP.innerHTML = `<strong>Habilidades:</strong> ${personaje.habilidades}`;
-                    cardBack.appendChild(habilidadesP);
-    
-                    const historiaP = document.createElement('p');
-                    historiaP.innerHTML = `<strong>Historia:</strong> ${personaje.historia}`;
-                    cardBack.appendChild(historiaP);
+
     
                     const descripcionP = document.createElement('p');
                     descripcionP.innerHTML = `<strong>Descripción:</strong> ${personaje.descripcion}`;
