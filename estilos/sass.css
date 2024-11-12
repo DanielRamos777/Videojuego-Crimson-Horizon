@@ -421,6 +421,180 @@
   grid-row: 1/5;
 }
 
+.download-section {
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  color: #ffffff;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #038587;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #015a94;
+}
+
+.compatible-text {
+  margin-top: 15px;
+  font-size: 16px;
+  color: white;
+}
+
+.compatible-devices img {
+  width: 40px;
+  margin: 0 10px;
+  vertical-align: middle;
+}
+
+/* Estilo general de la tabla */
+.system-requirements {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.system-requirements h3 {
+  font-size: 18px;
+  color: white;
+}
+
+.system-requirements table {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px auto;
+  border-collapse: collapse;
+}
+
+/* Estilos de las celdas */
+.system-requirements th, .system-requirements td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 14px;
+  word-wrap: break-word; /* Asegura que las palabras largas se rompan correctamente */
+}
+
+.system-requirements th {
+  font-weight: bold;
+  background-color: #038587;
+  color: #ffffff;
+}
+
+.system-requirements tr {
+  background-color: #015a94;
+  color: #ffffff;
+}
+
+/* Hacer la tabla responsiva con barra de desplazamiento */
+@media (max-width: 768px) {
+  .system-requirements table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .system-requirements th, .system-requirements td {
+    padding: 8px;
+    font-size: 12px; /* Reducir tamaño de fuente en pantallas pequeñas */
+  }
+  .system-requirements th {
+    font-size: 14px;
+  }
+  .system-requirements tr {
+    font-size: 12px; /* Reducir tamaño de fuente de las filas */
+  }
+}
+/* Estilo adicional para pantallas muy pequeñas (320px o menos) */
+@media (max-width: 320px) {
+  .system-requirements table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  /* Ajuste dinámico de tamaño de la fuente para pantallas pequeñas */
+  .system-requirements th, .system-requirements td {
+    padding: 4px; /* Reducir el padding para que quepa más contenido */
+    font-size: 8px; /* Ajustar tamaño de fuente a un tamaño más pequeño */
+  }
+  .system-requirements th {
+    font-size: 10px; /* Título con un tamaño ligeramente mayor */
+  }
+  .system-requirements tr {
+    font-size: 8px; /* Reducir tamaño de fuente de las filas */
+  }
+  /* Evitar que los textos se salgan de las celdas */
+  .system-requirements td {
+    font-size: 8px; /* Ajustar tamaño de fuente para celdas pequeñas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Añadir puntos suspensivos si el texto es largo */
+    white-space: nowrap; /* Evitar que las palabras largas se desborden */
+  }
+}
+.testimonials {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.testimonials h3 {
+  font-size: 24px;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.testimonials blockquote {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 15px 0;
+  padding: 10px 20px;
+  border-left: 4px solid #038587;
+  border-radius: 4px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.testimonials blockquote:before {
+  content: "“";
+  font-size: 30px;
+  color: #038587;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+.testimonials blockquote:after {
+  content: "”";
+  font-size: 30px;
+  color: #038587;
+  position: absolute;
+  bottom: -10px;
+  right: 10px;
+}
+
+.testimonials strong {
+  display: block;
+  text-align: right;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ffffff;
+}
+
 .map-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Mínimo de 300px por carta en pantallas más pequeñas */
@@ -690,6 +864,75 @@
 
 .btn-subir-nivel:hover, .btn-bajar-nivel:hover {
   background-color: #015a94; /* Color al pasar el mouse */
+}
+
+.imagen-container {
+  display: grid;
+  grid-template-columns: repeat(9, 10%);
+  grid-template-rows: repeat(20, auto);
+  margin: 1px;
+  gap: 1px;
+  padding: 1px;
+  justify-content: center;
+}
+
+.imagen-item {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: flex;
+}
+
+.imagen-item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Posiciones personalizadas para cada imagen */
+.Imagen1 {
+  grid-column: 1/5;
+  grid-row: 1/5;
+}
+
+.Imagen2 {
+  grid-column: 5/10;
+  grid-row: 1/5;
+}
+
+.Imagen3 {
+  grid-column: 1/5;
+  grid-row: 5/7;
+}
+
+.Imagen4 {
+  grid-column: 5/10;
+  grid-row: 5/7;
+}
+
+.Imagen5 {
+  grid-column: 1/6;
+  grid-row: 7/9;
+}
+
+.Imagen6 {
+  grid-column: 6/10;
+  grid-row: 7/9;
+}
+
+.Imagen7 {
+  grid-column: 1/4;
+  grid-row: 9/15;
+}
+
+.Imagen8 {
+  grid-column: 4/7;
+  grid-row: 9/15;
+}
+
+.Imagen9 {
+  grid-column: 7/10;
+  grid-row: 9/15;
 }
 
 * {
